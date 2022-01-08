@@ -1,16 +1,16 @@
+import React from 'react';
 import './App.css';
 import Dashboard from './Dashboard';
-import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 function App() {
   return (
     <div className="App">
       <Router>
-        <Switch>
+        <Routes>
           <Route path="/">
             <Dashboard/>
           </Route>
-        </Switch>
+        </Routes>
       </Router>
     </div>
   );
